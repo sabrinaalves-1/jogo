@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuga Assombrada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela Inicial -->
+  <div class="start-screen" id="startScreen">
+    <h1 class="title">Fuga Assombrada</h1>
+
+    <div class="cat">
+      <div class="ear ear--left"></div>
+      <div class="ear ear--right"></div>
+      <div class="face">
+        <div class="eye eye--left">
+          <div class="eye-pupil"></div>
+        </div>
+        <div class="eye eye--right">
+          <div class="eye-pupil"></div>
+        </div>
+        <div class="muzzle"></div>
+      </div>
+    </div>
+
+    <div class="get-ready">
+      <h2>Prepare-se!</h2>
+
+      <div class="tap-indicator">
+        🐾
+      </div>
+
+      <p class="instructions">
+        Toque na tela ou pressione <strong>ESPAÇO</strong> para fazer o gato pular!<br>
+        Desvie das mãos de zumbi e dos fantasmas!
+      </p>
+
+      <button class="start-button" id="startButton">COMEÇAR</button>
+    </div>
+  </div>
+
+  <!-- Tela do Jogo -->
+  <div class="game-screen" id="gameScreen">
+    <div class="score-display" id="scoreDisplay">Pontos: 0</div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <!-- Tela de Game Over -->
+  <div class="game-over-screen" id="gameOverScreen">
+    <h1 class="game-over-title">Game Over!</h1>
+    <div class="dead-cat" id="deadCat">💀🐱</div>
+    <div class="final-score" id="finalScore">Pontuação: 0</div>
+    <button class="restart-button" id="restartButton">JOGAR NOVAMENTE</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
